@@ -1,0 +1,77 @@
+  2 практическое занятие
+1. a=input ("введите имя:")
+print("привет, ", a)
+2. x=float (input ("введите длину комнаты:"))
+y=float (input ("введите ширину комнаты:"))
+S=x * y
+print(S)
+3. n = int(input())
+ 
+s = 1
+while n > 1:
+    s += n
+    n -= 1
+ 
+print(s)
+4. x=float (input ("введите час:"))
+y=float (input ("введите минуты:"))
+z=float (input ("введите секунды:"))
+S=x *3600 + y * 60 + z
+print(S)
+5. w=float (input ("введите вес:"))
+h=float (input ("введите рост:"))
+BMI=w / (h * h) 
+print(BMI)
+6. print(sum(map(int, list(input( )))))
+  3 практическое занятие
+1)number = int(input("Введите число, а программа определит чётное ли оно: "))
+
+if number % 2==0:
+    print("Это чётное число")
+else:
+    print("Это НЕчётное число")
+
+2)a=float(input("введите температуру (в градусах цельсия)"))
+tf=9*a/5+32
+print(tf)
+
+3) number = int(input("Введите число: "))
+
+if number % 5 % 7==0:
+    print("11")
+elif number % 5==0:
+    print("01")
+elif number % 7==0:
+    print("10")
+else:
+    print("00")
+
+4)print("Введите коэффициенты для квадратного уравнения")
+print("ax^2 + bx + c = 0:")
+a = float(input("a = "))
+b = float(input("b = "))
+c = float(input("c = "))
+ 
+D = b ** 2 - 4 * a * c
+ 
+if D > 0:
+    x1 = (-b + math.sqrt(D)) / (2 * a)
+    x2 = (-b - math.sqrt(D)) / (2 * a)
+    print("x1 = %.2f \nx2 = %.2f" % (x1, x2))
+elif D == 0:
+    x = -b / (2 * a)
+    print("x = %.2f" % x)
+else:
+    print("Корней нет")
+
+5) import random   
+N=random.randint(1,100)   
+userGuess=-1        
+while userGuess!=N:     
+    userGuess=int(input("Угадай число от 1 до 100: "))      
+    if userGuess > N:        
+        print("Число должно быть меньше ")      
+    elif userGuess < N:        
+        print("Число должно быть больше ")      
+    else:         
+        print("Вы угадали, это число = " + str(N)) 
