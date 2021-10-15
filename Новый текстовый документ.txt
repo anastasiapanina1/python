@@ -74,4 +74,26 @@ while userGuess!=N:
     elif userGuess < N:        
         print("Число должно быть больше ")      
     else:         
-        print("Вы угадали, это число = " + str(N)) 
+        print("Вы угадали, это число = " + str(N))
+        
+        
+ 4 практическое занятие
+1) v=float(input("введите скорость транспортного средства (в км/ч):"))
+t=int(input("введите сколько часов оно двигалось:"))
+for counter in range(1,t+1):
+    s=v*counter
+    print(s)
+
+3)a=int(input("введите целое число:"))
+b=1
+for counter in range(1,a+1):
+    b=b*counter
+print(b)
+
+4)s=int(input("введите стартовое количество:"))
+d=int(input("введите количество дней для размножения:"))
+r=int(input("введите среднесуточное увеличение (в процентах):"))
+for counter in range(1,d):
+    p=s*(r/100)+s
+    s=s*(r/100)+s
+    print(p)
